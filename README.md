@@ -17,8 +17,8 @@ You must then create the folder this user will route to on your server and copy 
 
 After the above is complete, navigate to C:\ProgramData\ssh and find sshd_config. Open this file and add the below text at the bottom or underneath any existing users.
 
-Match User NewUsername
-ChrootDirectory NewlyCreatedDirectoryPath
+    Match User NewUsername
+    ChrootDirectory NewlyCreatedDirectoryPath
 
 Replace the user "NewUsername" with your newly created user and enter directory path.
 
